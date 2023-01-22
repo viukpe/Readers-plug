@@ -1,10 +1,10 @@
 import pickle
-from nltk.stem import PorterStemmer
-from nltk.stem import WordNetLemmatizer
-from nltk.corpus import stopwords
 import re
+
 import nltk
-from flask import Flask, request, render_template
+from flask import Flask, render_template, request
+from nltk.corpus import stopwords
+from nltk.stem import PorterStemmer, WordNetLemmatizer
 
 nltk.download('stopwords')
 nltk.download('wordnet')
